@@ -1,0 +1,20 @@
+.polygon1 {
+  content: '';
+  background-color: #9bdaff;
+  height: 31.25rem;
+  width: 12.5rem;
+  clip-path: polygon(0 0, 0 40%, 50% 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.polygon2 {
+  content: '';
+  background-color: #38b6ff;
+  height: 31.25rem;
+  width: 12.5rem;
+  clip-path: polygon(0 0, 0 24%, 49.5% 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+}

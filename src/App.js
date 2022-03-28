@@ -1,8 +1,13 @@
 import logo from './logo.svg';
-import './App.css';
+import appStyles from './App.module.css';
+import Home from './pages/Home/Home';
 
 function App() {
-  return <div className='App'></div>;
+  return (
+    <div className='App'>
+      <Home></Home>
+    </div>
+  );
 }
 
 export default App;
