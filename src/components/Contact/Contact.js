@@ -25,11 +25,13 @@ const contact = () => {
   };
   return (
     <div>
-      <div className='container mb-4'>
+      <div className='container mb-4 mt-4'>
         <div className='row justify-content-center'>
           <div className='col-md-6 text-center mb-5'>
             <h2 className='heading-section fw-bold'>Contact Us</h2>
-            <p>Any Question or remarks? Just Write us a message!</p>
+            <p className='fw-bold text-secondary'>
+              Any Question or remarks? Just Write us a message!
+            </p>
           </div>
         </div>
         <div className='row justify-content-center'>
@@ -83,7 +85,7 @@ const contact = () => {
                               How Can We Assist You?
                             </label>
                             <div>
-                              <div className='form-check form-check-inline me-4'>
+                              <div className='form-check form-check-inline me-4 mt-2'>
                                 <input
                                   className='form-check-input text-success'
                                   type='radio'
@@ -98,7 +100,7 @@ const contact = () => {
                                   Web Design and Development
                                 </label>
                               </div>
-                              <div className='form-check form-check-inline me-4'>
+                              <div className='form-check form-check-inline me-4 mt-2'>
                                 <input
                                   className='form-check-input'
                                   type='radio'
@@ -113,7 +115,7 @@ const contact = () => {
                                   Custom Web App
                                 </label>
                               </div>
-                              <div className='form-check form-check-inline'>
+                              <div className='form-check form-check-inline mt-2'>
                                 <input
                                   className='form-check-input'
                                   type='radio'

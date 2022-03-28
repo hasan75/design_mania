@@ -20,7 +20,7 @@
 
 .contactForm .form-control {
   border: none;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(35, 115, 129, 0.308);
   padding: 0;
 }
 
@@ -83,4 +83,11 @@
 }
 .radioLabel {
   font-weight: 700 !important;
+}
+
+.anchors {
+  text-decoration: none;
+}
+.anchors:hover {
+  font-weight: 500;
 }
