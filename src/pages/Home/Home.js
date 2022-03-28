@@ -3,6 +3,7 @@ import FirstNavBar from '../../components/FirstNav/FirstNavBar';
 import HomeDiv from '../../components/HomeDiv/HomeDiv';
 import Contact from '../../components/Contact/Contact';
 import homeStyles from './Home.module.css';
+import Footer from '../../components/Footer/Footer';
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <div className={`${homeStyles.polygon2}`}></div>
       <HomeDiv></HomeDiv>
       <Contact></Contact>
+      <Footer></Footer>
     </div>
   );
 };
