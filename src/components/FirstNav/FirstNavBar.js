@@ -9,7 +9,7 @@ const FirstNavBar = () => {
         className={`${navStyles.navbar} navbar navbar-expand-lg navbar-light bg-white`}
       >
         <div className='container'>
-          <a className='navbar-brand' href='#'>
+          <a className='navbar-brand' href='/'>
             <img className={`${navStyles.logo}`} src={logo} alt='kajkamlogo' />
           </a>
           <button
@@ -30,25 +30,29 @@ const FirstNavBar = () => {
             <ul
               className={`${navStyles.navbarNav} navbar-nav ms-auto mb-2 mb-lg-0`}
             >
-              <li className='nav-item'>
+              <li className={`${navStyles.navItem} nav-item mx-3 `}>
                 <a
-                  className='nav-link active mx-3 '
+                  className={`${navStyles.navLinkItem} nav-link active `}
                   aria-current='page'
-                  href='#'
+                  href='#homeSection'
                 >
                   Home
                 </a>
               </li>
-              <li className='nav-item mx-3'>
-                <a className='nav-link' href='#'>
+              <li className={`${navStyles.navItem} nav-item mx-3 `}>
+                <a className={`${navStyles.navLinkItem} nav-link`} href='#home'>
                   Service
                 </a>
               </li>
-              <li className='nav-item mx-3'>
-                <a className='nav-link'>About</a>
+              <li className={`${navStyles.navItem} nav-item mx-3 `}>
+                <a className={`${navStyles.navLinkItem} nav-link`} href='#home'>
+                  About
+                </a>
               </li>
-              <li className='nav-item mx-3'>
-                <a className='nav-link'>Contact</a>
+              <li className={`${navStyles.navItem} nav-item mx-3 `}>
+                <a className={`${navStyles.navLinkItem} nav-link`} href='#home'>
+                  Contact
+                </a>
               </li>
             </ul>
           </div>

@@ -5,6 +5,7 @@ import videoContent from '../../videos/Untitled design.mp4';
 const HomeDiv = () => {
   return (
     <div className={`${homeDivStyles.homeDiv} container`}>
+      <section id='homeSection'></section>
       <div className={`${homeDivStyles.rowBanckground} row`}>
         <div className=' col-lg-5 pt-4 mt-1 order-2  order-md-1'>
           <h1 className={`${homeDivStyles.heading} fw-bold mt-lg-4 mb-3`}>

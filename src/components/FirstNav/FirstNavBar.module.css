@@ -10,6 +10,31 @@
 .navbar .navbarCollapse {
   text-align: center;
 }
+.navLinkItem {
+  position: relative;
+}
+.navLinkItem:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2.5px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #560bad;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.navLinkItem:active {
+  font-weight: 700;
+}
+
+.navItem:hover .navLinkItem:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
 @media only screen and (max-width: 600px) {
   .logo {
     height: 60px;
