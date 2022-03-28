@@ -5,7 +5,9 @@ import navStyles from './FirstNavBar.module.css';
 const FirstNavBar = () => {
   return (
     <div>
-      <nav className='navbar navbar-expand-lg navbar-light bg-light'>
+      <nav
+        className={`${navStyles.navbar} navbar navbar-expand-lg navbar-light bg-white`}
+      >
         <div className='container'>
           <a className='navbar-brand' href='#'>
             <img className={`${navStyles.logo}`} src={logo} alt='kajkamlogo' />
@@ -21,11 +23,16 @@ const FirstNavBar = () => {
           >
             <span className='navbar-toggler-icon'></span>
           </button>
-          <div className='collapse navbar-collapse' id='navbarSupportedContent'>
-            <ul className='navbar-nav ms-auto mb-2 mb-lg-0'>
+          <div
+            className={`${navStyles.navbarCollapse} collapse navbar-collapse `}
+            id='navbarSupportedContent'
+          >
+            <ul
+              className={`${navStyles.navbarNav} navbar-nav ms-auto mb-2 mb-lg-0`}
+            >
               <li className='nav-item'>
                 <a
-                  className='nav-link active mx-3'
+                  className='nav-link active mx-3 '
                   aria-current='page'
                   href='#'
                 >

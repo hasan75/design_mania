@@ -1,4 +1,19 @@
 .logo {
-  height: 82px;
-  width: 237px;
+  height: 5.125rem;
+  width: 14.8rem;
+}
+/* .navbar .navbarNav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+} */
+.navbar .navbarCollapse {
+  text-align: center;
+}
+@media only screen and (max-width: 600px) {
+  .logo {
+    height: 60px;
+    width: 180px;
+    margin-left: 40%;
+  }
 }
