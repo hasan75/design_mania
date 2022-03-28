@@ -14,7 +14,7 @@
   background-color: white;
   color: #545454;
   transform: scale(1.02);
-  box-shadow: 0 7px 14px rgba(0, 0, 0, 0.12), 0 4px 8px #d3eafc;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12), 0 4px 8px #d3eafc;
   padding: 4px;
   margin: 4px;
 }

@@ -6,10 +6,8 @@ const HomeDiv = () => {
   return (
     <div className={`${homeDivStyles.homeDiv} container`}>
       <div className={`${homeDivStyles.rowBanckground} row`}>
-        <div className='col-md-5 pt-4 mt-1'>
-          <h1
-            className={`${homeDivStyles.heading} fw-bold mt-lg-4 mt-sm-2 mb-3`}
-          >
+        <div className=' col-lg-5 pt-4 mt-1 order-2  order-md-1'>
+          <h1 className={`${homeDivStyles.heading} fw-bold mt-lg-4 mb-3`}>
             Start Making <br /> Your Website Today
           </h1>
           <h6 className='fw-bold text-secondary mt-3 mb-3 pb-lg-3'>
@@ -25,14 +23,14 @@ const HomeDiv = () => {
             </div>
             <div className='col-4'>
               <div
-                className={`${homeDivStyles.homeCategory} d-flex justify-content-center align-items-center`}
+                className={`${homeDivStyles.homeCategory} d-flex justify-content-center align-items-center text-center`}
               >
                 <span>Custom Web App</span>
               </div>
             </div>
             <div className='col-4'>
               <div
-                className={`${homeDivStyles.homeCategory} d-flex justify-content-center align-items-center`}
+                className={`${homeDivStyles.homeCategory} d-flex justify-content-center align-items-center text-center`}
               >
                 <span>E-commerce Development</span>
               </div>
@@ -52,7 +50,7 @@ const HomeDiv = () => {
             </span>
           </div>
         </div>
-        <div className='col-md-7'>
+        <div className='col-lg-7 order-1 order-md-2'>
           <video className={`${homeDivStyles.videoStyle}`} autoPlay loop muted>
             <source src={videoContent} type='video/mp4' />
           </video>
