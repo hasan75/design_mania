@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Oswald:wght@300;400;500&display=swap");
+.mainservice {
+  margin-top: 30px;
+  font-family: "Abel", sans-serif;
+}
+.mainservice h2 {
+  font-size: 30px;
+  text-align: center;
+}
+.service {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 130px;
+}
+.container {
+  width: 350px;
+  margin-top: 20px;
+  position: relative;
+  background: #ebdcfd;
+  margin-left: 30px;
+  height: 500px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  border-radius: 4px;
+  transition: box-shadow 1s;
+}
+.container:hover {
+  box-shadow: #913cf3 0px 10px 36px 0px, #913cf3 0px 0px 0px 1px;
+}
+.web {
+  padding: 50px 10px 50px 10px;
+}
+.image img {
+  max-width: 150px;
+  padding-left: 90px;
+}
+.web h1 {
+  font-size: 22px;
+  padding: 30px 0px;
+  text-align: start;
+  padding-left: 20px;
+}
+.web p {
+  font-size: 20px;
+  text-align: start;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+.web span {
+  font-size: 60px;
+  color: #be8cf8;
+  padding-left: 130px;
+}
+.overlay {
+  max-width: 350px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #913cf3;
+  overflow: hidden;
+  border-radius: 4px;
+  /* width: 100%; */
+  height: 0;
+  transition: 1s ease;
+}
+
+.container:hover .overlay {
+  height: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  background: #913cf3;
+  position: absolute;
+  top: 45%;
+  left: 60%;
+  width: 350px;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.text h1 {
+  font-size: 20px;
+  text-align: start;
+}
+.listItem {
+  font-size: 14px;
+  line-height: 25px;
+  text-align: start;
+  list-style-type: circle;
+}

@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Forum&family=Oswald:wght@300;400;500&family=Raleway:wght@100&family=Source+Serif+Pro:wght@200;300&display=swap");
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  font-family: "Forum", cursive;
+  padding: 0px 10px;
+}
+.Container {
+  text-align: start;
+  max-width: 550px;
+  /* font-family: "Abel", sans-serif; */
+  /* background: rgb(216, 213, 213); */
+}
+.firstDiv h4 {
+  color: #560bad;
+  font-size: 15px;
+}
+.firstDiv h1 {
+  font-size: 25px;
+  line-height: 35px;
+}
+.firstDiv p {
+  line-height: 28px;
+  color: #613b8a;
+  font-size: 18px;
+}
+.secondDiv {
+  padding-top: 35px;
+  display: flex;
+  width: 620px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.eBtn,
+.sBtn {
+  margin-top: 5px;
+  width: 280px;
+  /* border: 2px solid rebeccapurple; */
+}
+.para {
+  font-size: 17px !important;
+}
+.eBtn {
+  margin-right: 5px;
+}
+.icon {
+  font-size: 40px;
+  color: #560bad;
+}
+.secondDiv p {
+  font-size: 18px;
+  line-height: 28px;
+  padding-top: 20px;
+  padding: 0px 20px 0px 0px;
+}
+/* Button Animation  */
+.cta {
+  border: none;
+  font-size: 20px;
+  padding: 10px 0px 9px 0px;
+  background: none;
+  border-bottom: 2.5px solid #d4d1d1;
+  cursor: pointer;
+}
+.cta span {
+  padding-bottom: 13px;
+  /* background: rgb(173, 168, 168); */
+  padding-right: 60px;
+}
+.animation {
+  position: relative;
+  /* color: block; */
+}
+.animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2.5px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #560bad;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.cta:hover .animation:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* MEDIA  */
+@media only screen and (max-width: 689px) {
+  .Container {
+    max-width: 300px;
+  }
+  .firstDiv h4 {
+    font-size: 13px;
+  }
+  .firstDiv h1 {
+    font-size: 20px;
+  }
+  .firstDiv p {
+    line-height: 22px;
+    font-size: 16px;
+  }
+  /* SECOND DIV  */
+  .secondDiv {
+    padding-top: 25px;
+    width: 300px;
+  }
+  .eBtn,
+  .sBtn {
+    width: 250px;
+  }
+  .icon {
+    font-size: 20px;
+    color: #560bad;
+  }
+  .cta span {
+    font-size: 18px;
+  }
+  .cta {
+    border-bottom: 1.5px solid #d4d1d1;
+  }
+  .animation:after {
+    height: 2px;
+  }
+  .para {
+    font-size: 15px !important;
+    line-height: 20px !important;
+  }
+}

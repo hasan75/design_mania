@@ -1,0 +1,282 @@
+.text {
+  text-align: center;
+}
+.text h1 {
+  font-size: 25px;
+}
+.team {
+  /* background: rgb(128, 79, 79); */
+  width: 600px;
+  position: relative;
+  display: flex;
+
+  height: 300px;
+  margin-top: 60px;
+}
+/* ANTU  */
+.antu {
+  text-align: start;
+  position: absolute;
+  left: 0px;
+  top: 0%;
+}
+.antu .image {
+  max-width: 100px;
+  background: #3b9d65;
+  border: 1px solid #3b9d65;
+  height: 100px;
+  border-radius: 50%;
+
+  position: relative;
+}
+.antu .image img {
+  max-width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  left: 15px;
+}
+.antu h3 {
+  font-size: 14px;
+  font-weight: 600;
+  margin-left: -18px;
+}
+.antu h5 {
+  font-size: 12px;
+  margin-top: -4px;
+  margin-left: -32px;
+  font-weight: 300;
+}
+/* NAJIM  */
+
+.najim {
+  text-align: start;
+  left: 155px;
+  top: 80px;
+  /* position: relative; */
+  position: absolute;
+}
+.najim .image {
+  max-width: 80px;
+  background: #834cef;
+  border: 1px solid #834cef;
+  height: 80px;
+  border-radius: 50%;
+  position: relative;
+}
+.najim h3 {
+  font-size: 15px;
+  font-weight: 600;
+  padding-left: 8px;
+}
+.najim h5 {
+  font-size: 12px;
+  margin-top: -4px;
+  margin-left: -35px;
+  font-weight: 300;
+}
+.najim .image img {
+  max-width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  position: relative;
+  top: 6px;
+  left: 15px;
+}
+/* HASAN  */
+.hasan {
+  text-align: start;
+  position: absolute;
+  left: 255px;
+  top: 0%;
+  /* position: absolute; */
+}
+
+.hasan .image {
+  max-width: 100px;
+  background: #d5e888;
+  border: 1px solid #d5e888;
+  height: 100px;
+  margin-left: 12px;
+  border-radius: 50%;
+  position: relative;
+}
+.hasan .image img {
+  max-width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  position: relative;
+  top: 10px;
+  left: 15px;
+}
+.hasan h3 {
+  font-size: 15px;
+  font-weight: 600;
+  padding-left: 25px;
+}
+.hasan h5 {
+  font-size: 12px;
+  margin-top: -4px;
+  font-weight: 300;
+}
+/* Samim  */
+.samim {
+  text-align: start;
+  left: 410px;
+  top: 80px;
+  /* position: relative; */
+  position: absolute;
+}
+.samim .image {
+  max-width: 80px;
+  background: #3b73c0;
+  border: 1px solid #3b73c0;
+  height: 80px;
+  border-radius: 50%;
+  position: relative;
+  left: 30px;
+}
+
+.samim .image img {
+  max-width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+.samim h3 {
+  font-size: 15px;
+  font-weight: 600;
+  padding-left: 6px;
+}
+.samim h5 {
+  font-size: 12px;
+  margin-top: -4px;
+  font-weight: 300;
+}
+
+/* MEDIA  */
+@media only screen and (max-width: 689px) {
+  .text h1 {
+    font-size: 15px;
+  }
+  .team {
+    /* background: rgb(128, 79, 79); */
+    width: 300px;
+    height: 150px;
+    margin-top: 30px;
+  }
+  /* ANTU  */
+  .antu {
+    left: 15px;
+    top: 0%;
+  }
+  .antu .image {
+    max-width: 50px;
+    height: 50px;
+    left: -20px;
+  }
+  .antu .image img {
+    max-width: 50px;
+    height: 50px;
+    left: 15px;
+  }
+  .antu h3 {
+    font-size: 8px;
+    font-weight: 600;
+    margin-left: -25px;
+  }
+  .antu h5 {
+    font-size: 6px;
+    margin-top: -4px;
+  }
+  /* NAJIM  */
+
+  .najim {
+    text-align: start;
+    left: 75px;
+    top: 30px;
+    /* position: relative; */
+  }
+  .najim .image {
+    max-width: 40px;
+    height: 40px;
+  }
+  .najim h3 {
+    font-size: 8px;
+    padding-left: 0px;
+  }
+  .najim h5 {
+    font-size: 6px;
+    margin-top: -4px;
+    padding-left: 12px;
+  }
+  .najim .image img {
+    max-width: 30px;
+    height: 30px;
+    top: 6px;
+    left: 15px;
+  }
+  /* HASAN  */
+  .hasan {
+    left: 125px;
+    top: 0%;
+    /* position: absolute; */
+  }
+  .hasan .image {
+    max-width: 50px;
+    height: 50px;
+    margin-left: 25px;
+  }
+  .hasan .image img {
+    max-width: 35px;
+    height: 35px;
+    top: 10px;
+    left: 15px;
+  }
+  .hasan h3 {
+    font-size: 8px;
+    padding-left: 25px;
+  }
+  .hasan h5 {
+    font-size: 6px;
+    margin-top: -4px;
+    margin-left: 5px;
+    font-weight: 300;
+  }
+  /* SAMIM  */
+  .samim {
+    text-align: start;
+    left: 210px;
+    top: 30px;
+    /* position: relative; */
+    position: absolute;
+  }
+  .samim .image {
+    max-width: 40px;
+    height: 40px;
+    left: 25px;
+  }
+
+  .samim .image img {
+    max-width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: relative;
+    top: 10px;
+    left: 10px;
+  }
+  .samim h3 {
+    font-size: 8px;
+    font-weight: 600;
+    padding-left: 18px;
+  }
+  .samim h5 {
+    font-size: 6px;
+    margin-top: -4px;
+    margin-left: 5px;
+    font-weight: 300;
+  }
+}
