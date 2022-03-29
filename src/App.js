@@ -2,6 +2,7 @@ import Home from './pages/Home/Home';
 import MessengerCustomerChat from 'react-messenger-customer-chat';
 import { useEffect, useState } from 'react';
 import appStyles from './App.module.css';
+import { Typewriter, useTypewriter, Cursor } from 'react-simple-typewriter';
 
 function App() {
   const [showBtn, setShowBtn] = useState(false);
@@ -23,7 +24,7 @@ function App() {
   return (
     <div className='App'>
       <Home></Home>
-      <MessengerCustomerChat pageId='110189644873126' appId='324266099592426' />
+      <MessengerCustomerChat pageId='109736494950394' appId='324266099592426' />
       {showBtn && (
         <button onClick={scrollToTop} className={`${appStyles.backToTop} btn`}>
           {' '}

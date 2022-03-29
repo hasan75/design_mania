@@ -24,7 +24,7 @@ const contact = () => {
     alert('Email has been sent to the admins');
   };
   return (
-    <div>
+    <section id='contact'>
       <div className='container mb-4 mt-4'>
         <div className='row justify-content-center'>
           <div className='col-md-6 text-center mb-5'>
@@ -228,7 +228,7 @@ const contact = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -40,50 +40,68 @@ const Footer = () => {
         </div>
       </div>
       <div className='container '>
-        <div className='d-flex align-items-center justify-content-center pb-3'>
-          <a className={`${footerStyles.footerNav}`} href='#homeSection'>
-            Home
-          </a>
-          <a className={`${footerStyles.footerNav}`} href='#homeSection'>
-            {' '}
-            Service
-          </a>
-          <a className={`${footerStyles.footerNav}`} href='#homeSection'>
-            About
-          </a>
-          <a className={`${footerStyles.footerNav}`} href='#homeSection'>
-            Contact
-          </a>
+        <div className='row d-flex align-items-center justify-content-center pb-5'>
+          <div className='col-3 text-center'>
+            <a className={`${footerStyles.footerNav} `} href='#homeSection'>
+              Home
+            </a>
+          </div>
+          <div className='col-3 text-center'>
+            <a className={`${footerStyles.footerNav} `} href='#serviceSection'>
+              {' '}
+              Service
+            </a>
+          </div>
+          <div className='col-3 text-center'>
+            <a
+              className={`${footerStyles.footerNav} text-center`}
+              href='#aboutSection'
+            >
+              About
+            </a>
+          </div>
+          <div className='col-3 text-center'>
+            <a
+              className={`${footerStyles.footerNav} text-center`}
+              href='#contact'
+            >
+              Contact
+            </a>
+          </div>
         </div>
-        <p className='text-dark fw-bold text-center my-2 pb-3'>
+        <p className='text-secondary fw-bold text-center my-2 pb-3'>
           CopyRight &copy; 2022 KajKam Initiative. All Rights Reserved
         </p>
       </div>
       <div className='d-flex justify-content-center align-items-center'>
         <a
           className={`${footerStyles.footerSocial} ${footerStyles.instagram} `}
-          href=''
+          href='https://www.facebook.com/kajkaminitiativeltd'
           target='_blank'
+          rel='noreferrer'
         >
           <i class='fa-brands fa-instagram fa-2x'></i>
         </a>
         <a
-          href=''
+          href='https://www.facebook.com/kajkaminitiativeltd'
           target='_blank'
+          rel='noreferrer'
           className={`${footerStyles.footerSocial} ${footerStyles.faceBook}`}
         >
           <i class='fa-brands fa-facebook-f fa-2x'></i>
         </a>
         <a
-          href=''
+          href='https://www.facebook.com/kajkaminitiativeltd'
           target='_blank'
+          rel='noreferrer'
           className={`${footerStyles.footerSocial} ${footerStyles.linkedin}`}
         >
           <i class='fa-brands fa-linkedin-in fa-2x'></i>
         </a>
         <a
-          href=''
+          href='https://www.facebook.com/kajkaminitiativeltd'
           target='_blank'
+          rel='noreferrer'
           className={`${footerStyles.footerSocial} ${footerStyles.twitter}`}
         >
           <i class='fa-brands fa-twitter fa-2x'></i>

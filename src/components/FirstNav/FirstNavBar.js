@@ -50,7 +50,10 @@ const FirstNavBar = () => {
                 </a>
               </li>
               <li className={`${navStyles.navItem} nav-item mx-3 `}>
-                <a className={`${navStyles.navLinkItem} nav-link`} href='#home'>
+                <a
+                  className={`${navStyles.navLinkItem} nav-link`}
+                  href='#contact'
+                >
                   Contact
                 </a>
               </li>
