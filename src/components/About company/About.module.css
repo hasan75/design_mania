@@ -1,15 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Abel&family=Forum&family=Oswald:wght@300;400;500&family=Raleway:wght@100&family=Source+Serif+Pro:wght@200;300&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Abel&family=Forum&family=Oswald:wght@300;400;500&family=Raleway:wght@100&family=Source+Serif+Pro:wght@200;300&display=swap"); */
 .about {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  font-family: "Forum", cursive;
-  padding: 0px 10px;
+  /* font-family: "Forum", cursive; */
+  /* padding: 0px 10px; */
+  margin-bottom: 60px;
+  margin-top: 30px;
 }
 .Container {
-  text-align: start;
-  max-width: 550px;
+  /* text-align: start;
+  max-width: 550px; */
   /* font-family: "Abel", sans-serif; */
   /* background: rgb(216, 213, 213); */
 }
@@ -75,7 +77,7 @@
   /* color: block; */
 }
 .animation:after {
-  content: "";
+  content: '';
   position: absolute;
   width: 100%;
   transform: scaleX(0);
@@ -93,7 +95,9 @@
 }
 
 /* MEDIA  */
-@media only screen and (max-width: 689px) {
+/* @media only screen and (max-width: 689px) {
+   */
+@media only screen and (max-width: 669px) {
   .Container {
     max-width: 300px;
   }

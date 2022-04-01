@@ -25,19 +25,40 @@ const Contact = () => {
 
     const newMessage = { name, email, category, subject, message };
 
-    fetch('http//localhost:5000/emails', {
-      method: 'POST',
-      headers: {
-        'content-type': 'application/json',
-      },
-      body: JSON.stringify(newMessage),
-    })
-      .then((res) => res.json())
-      .then((data) => {
+    // fetch('http//localhost:5000/emails', {
+    //   method: 'POST',
+    //   headers: {
+    //     'content-type': 'application/json',
+    //   },
+    //   body: JSON.stringify(newMessage),
+    // })
+    //   .then((res) => res.json())
+    //   .then(
+    //     (data) => {
+    //       console.log(data);
+    //     },
+    //     (error) => {
+    //       console.log(error);
+    //     }
+    //   );
+
+    const contatcMessage = async () => {
+      try {
+        const res = await fetch('https://localhost:5000/emails', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(newMessage),
+        });
+        const data = await res.json();
         console.log(data);
-        e.target.reset();
-        alert('Email has been sent to the admins');
-      });
+      } catch (error) {
+        console.log(error);
+      }
+    };
+    contatcMessage();
+
     // emailjs
     //   .sendForm(
     //     'gmail',
