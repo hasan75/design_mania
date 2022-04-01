@@ -40,12 +40,18 @@ const FirstNavBar = () => {
                 </a>
               </li>
               <li className={`${navStyles.navItem} nav-item mx-3 `}>
-                <a className={`${navStyles.navLinkItem} nav-link`} href='#home'>
+                <a
+                  className={`${navStyles.navLinkItem} nav-link`}
+                  href='#serviceSection'
+                >
                   Service
                 </a>
               </li>
               <li className={`${navStyles.navItem} nav-item mx-3 `}>
-                <a className={`${navStyles.navLinkItem} nav-link`} href='#home'>
+                <a
+                  className={`${navStyles.navLinkItem} nav-link`}
+                  href='#aboutSection'
+                >
                   About
                 </a>
               </li>
