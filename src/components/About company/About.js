@@ -5,7 +5,9 @@ import { about, exprience, support } from './AboutData';
 function About() {
   return (
     <div className={`${aboutStyles.about} container`} id='aboutSection'>
-      <div className='row g-1 d-flex  align-items-center'>
+      <div
+        className={`${aboutStyles.aboutSection} row g-1 d-flex  align-items-center`}
+      >
         <div className='col-md-6'>
           <div className={aboutStyles.Container}>
             <div className={aboutStyles.firstDiv}>

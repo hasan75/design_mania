@@ -10,8 +10,8 @@
   margin-top: 30px;
 }
 .Container {
-  /* text-align: start;
-  max-width: 550px; */
+  text-align: start;
+  /* max-width: 550px;  */
   /* font-family: "Abel", sans-serif; */
   /* background: rgb(216, 213, 213); */
 }
@@ -136,5 +136,8 @@
   .para {
     font-size: 15px !important;
     line-height: 20px !important;
+  }
+  .aboutSection {
+    margin-left: 30px;
   }
 }
