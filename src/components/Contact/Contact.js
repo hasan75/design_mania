@@ -1,28 +1,60 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import './ContactTrue.css';
 import emailjs from '@emailjs/browser';
-const contact = () => {
+const Contact = () => {
+  const [selectedCat, setSelectedCat] = useState('');
+
+  const nameRef = useRef();
+  const emailRef = useRef();
+  const subjectRef = useRef();
+  const messageRef = useRef();
+  const categoryRef = useRef();
+
+  const handleCatChange = (e) => {
+    setSelectedCat(e.target.value);
+  };
+
   const formSubmit = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        'gmail',
-        'template_lj61lcs',
-        e.target,
-        'user_S5qet95kpmqgCqt64AlCE'
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-    e.target.reset();
-    alert('Email has been sent to the admins');
+    const name = nameRef.current.value;
+    const email = emailRef.current.value;
+    const category = selectedCat;
+    const subject = subjectRef.current.value;
+    const message = messageRef.current.value;
+
+    const newMessage = { name, email, category, subject, message };
+
+    fetch('http//localhost:5000/emails', {
+      method: 'POST',
+      headers: {
+        'content-type': 'application/json',
+      },
+      body: JSON.stringify(newMessage),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+        e.target.reset();
+        alert('Email has been sent to the admins');
+      });
+    // emailjs
+    //   .sendForm(
+    //     'gmail',
+    //     'template_lj61lcs',
+    //     e.target,
+    //     'user_S5qet95kpmqgCqt64AlCE'
+    //   )
+    //   .then(
+    //     (result) => {
+    //       console.log(result.text);
+    //     },
+    //     (error) => {
+    //       console.log(error.text);
+    //     }
+    //   );
   };
+
   return (
     <section id='contact'>
       <div className='container mb-4 mt-4'>
@@ -50,7 +82,10 @@ const contact = () => {
                       <div className='row'>
                         <div className='col-md-6'>
                           <div className='form-group my-2'>
-                            <label className='label contactLabel' for='name'>
+                            <label
+                              className='label contactLabel'
+                              htmlFor='name'
+                            >
                               Full Name
                             </label>
                             <input
@@ -59,12 +94,16 @@ const contact = () => {
                               name='name'
                               id='name'
                               placeholder='Name'
+                              ref={nameRef}
                             />
                           </div>
                         </div>
                         <div className='col-md-6'>
                           <div className='form-group my-2'>
-                            <label className='label contactLabel' for='email'>
+                            <label
+                              className='label contactLabel'
+                              htmlFor='email'
+                            >
                               Email Address
                             </label>
                             <input
@@ -73,6 +112,8 @@ const contact = () => {
                               name='email'
                               id='email'
                               placeholder='Email'
+                              required
+                              ref={emailRef}
                             />
                           </div>
                         </div>
@@ -80,7 +121,7 @@ const contact = () => {
                           <div className='form-group my-2'>
                             <label
                               className='label contactLabel radioLabel'
-                              for='website'
+                              htmlFor='website'
                             >
                               How Can We Assist You?
                             </label>
@@ -91,11 +132,13 @@ const contact = () => {
                                   type='radio'
                                   name='inlineRadioOptions'
                                   id='webDesign'
-                                  value='Web Design'
+                                  value='Web Design & Development'
+                                  onClick={handleCatChange}
+                                  ref={categoryRef}
                                 />
                                 <label
                                   className='form-check-label'
-                                  for='webDesign'
+                                  htmlFor='webDesign'
                                 >
                                   Web Design and Development
                                 </label>
@@ -107,10 +150,12 @@ const contact = () => {
                                   name='inlineRadioOptions'
                                   id='customApp'
                                   value='Custom Web App'
+                                  onClick={handleCatChange}
+                                  ref={categoryRef}
                                 />
                                 <label
                                   className='form-check-label'
-                                  for='customApp'
+                                  htmlFor='customApp'
                                 >
                                   Custom Web App
                                 </label>
@@ -122,10 +167,12 @@ const contact = () => {
                                   name='inlineRadioOptions'
                                   id='ECommerce'
                                   value='E-Commerce'
+                                  onClick={handleCatChange}
+                                  ref={categoryRef}
                                 />
                                 <label
                                   className='form-check-label'
-                                  for='ECommerce'
+                                  htmlFor='ECommerce'
                                 >
                                   E - Commerce
                                 </label>
@@ -135,7 +182,10 @@ const contact = () => {
                         </div>
                         <div className='col-md-12'>
                           <div className='form-group my-2'>
-                            <label className='label contactLabel' for='subject'>
+                            <label
+                              className='label contactLabel'
+                              htmlFor='subject'
+                            >
                               Subject
                             </label>
                             <input
@@ -144,12 +194,13 @@ const contact = () => {
                               name='subject'
                               id='subject'
                               placeholder='Subject'
+                              ref={subjectRef}
                             />
                           </div>
                         </div>
                         <div className='col-md-12'>
                           <div className='form-group my-2'>
-                            <label className='label contactLabel' for='#'>
+                            <label className='label contactLabel' htmlFor='#'>
                               Message
                             </label>
                             <textarea
@@ -159,6 +210,8 @@ const contact = () => {
                               cols='30'
                               rows='4'
                               placeholder='Message'
+                              required
+                              ref={messageRef}
                             ></textarea>
                           </div>
                         </div>
@@ -232,4 +285,4 @@ const contact = () => {
   );
 };
 
-export default contact;
+export default Contact;

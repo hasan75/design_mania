@@ -23,7 +23,7 @@ const HomeDiv = () => {
                   cursor
                   cursorStyle=''
                   typeSpeed={60}
-                  deleteSpeed={50}
+                  deleteSpeed={40}
                   delaySpeed={1000}
                 />
               </span>{' '}
