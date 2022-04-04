@@ -25,25 +25,6 @@ const Contact = () => {
     const message = messageRef.current.value;
 
     const newMessage = { name, email, category, subject, message };
-    console.log(newMessage);
-
-    // fetch('https://system.kajkaminitiative.com/contact', {
-    //   method: 'POST',
-    //   mode: 'no-cors',
-    //   headers: {
-    //     'content-type': 'application/json',
-    //   },
-    //   body: JSON.stringify(newMessage),
-    // })
-    //   .then((res) => res.json())
-    //   .then(
-    //     (data) => {
-    //       console.log(data);
-    //     },
-    //     (error) => {
-    //       console.log(error);
-    //     }
-    //   );
 
     const contactMessage = async () => {
       try {
@@ -55,7 +36,7 @@ const Contact = () => {
           },
           body: JSON.stringify(newMessage),
         });
-        await console.log(res);
+        // await console.log(res);
         const json = await res.json();
 
         if (json.status === 'success') {
@@ -74,25 +55,6 @@ const Contact = () => {
       }
     };
     contactMessage();
-
-    // const makeAPICall = async () => {
-    //   try {
-    //     const response = await fetch(
-    //       'https://system.kajkaminitiative.com/contact',
-    //       {
-    //         method: 'post',
-    //         mode: 'cors',
-    //         body: JSON.stringify(newMessage),
-    //       }
-    //     );
-    //     await console.log(response);
-    //     const data = await response.json();
-    //     console.log({ data });
-    //   } catch (e) {
-    //     console.log(e);
-    //   }
-    // };
-    // makeAPICall();
 
     /**
      * ! Working
@@ -118,22 +80,6 @@ const Contact = () => {
     //   }
     // };
     // makeAPICall();
-
-    // emailjs
-    //   .sendForm(
-    //     'gmail',
-    //     'template_lj61lcs',
-    //     e.target,
-    //     'user_S5qet95kpmqgCqt64AlCE'
-    //   )
-    //   .then(
-    //     (result) => {
-    //       console.log(result.text);
-    //     },
-    //     (error) => {
-    //       console.log(error.text);
-    //     }
-    //   );
   };
 
   return (
