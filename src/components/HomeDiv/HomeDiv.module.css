@@ -29,7 +29,12 @@
 
 .homeCategory:hover{
   font-weight: 700;
-  transform: scale(1.02);
+  /* transform: scale(1.02); */
+  background-color: #9bdaff;
+  color: #3f3f3f;
+  -webkit-transition: background-color 1000ms linear, color 1000ms linear;
+  -ms-transition: background-color 1000ms linear, color 1000ms linear;
+  transition: background-color 1000ms linear, color 1000ms linear;
 }
 
 .getStartButton {
@@ -44,6 +49,7 @@
 .getStartButton:hover {
   color: #d3eafc;
   background-color: #545454;
+
 }
 
 .textLine {
