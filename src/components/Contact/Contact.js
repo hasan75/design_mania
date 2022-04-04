@@ -26,60 +26,61 @@ const Contact = () => {
 
     const newMessage = { name, email, category, subject, message };
 
-    const contactMessage = async () => {
-      try {
-        const res = await fetch('https://system.kajkaminitiative.com/contact', {
-          method: 'POST',
-          mode: 'cors',
-          headers: {
-            'content-type': 'application/json',
-          },
-          body: JSON.stringify(newMessage),
-        });
-        // await console.log(res);
-        const json = await res.json();
+    // const contactMessage = async () => {
+    //   try {
+    //     const res = await fetch('https://system.kajkaminitiative.com/contact', {
+    //       method: 'POST',
+    //       mode: 'no-cors',
+    //       headers: {
+    //         'content-type': 'application/json',
+    //         // 'Access-Control-Allow-Origin': '*',
+    //       },
+    //       body: JSON.stringify(newMessage),
+    //     });
+    //     console.log(res);
+    //     const json = await res.json();
 
-        if (json.status === 'success') {
-          Swal.fire('Your Message has been sent!', '', 'success');
-        }
-      } catch (error) {
-        Swal.fire({
-          position: 'center',
-          icon: 'error',
-          title: 'Something Went Wrong',
-          html: 'Please Try again',
-          showConfirmButton: false,
-          timer: 1500,
-        });
-        console.log(error);
-      }
-    };
-    contactMessage();
+    //     if (json.status === 'success') {
+    //       Swal.fire('Your Message has been sent!', '', 'success');
+    //     }
+    //   } catch (error) {
+    //     Swal.fire({
+    //       position: 'center',
+    //       icon: 'error',
+    //       title: 'Something Went Wrong',
+    //       html: 'Please Try again',
+    //       showConfirmButton: false,
+    //       timer: 1500,
+    //     });
+    //     console.log(error);
+    //   }
+    // };
+    // contactMessage();
 
     /**
      * ! Working
      */
-    // const makeAPICall = async () => {
-    //   try {
-    //     const response = await fetch(
-    //       'https://system.kajkaminitiative.com/contact',
-    //       {
-    //         method: 'post',
-    //         mode: 'cors',
-    //         headers: {
-    //           'Content-Type': 'application/json',
-    //         },
-    //         body: JSON.stringify(newMessage),
-    //       }
-    //     );
-    //     // await console.log(response);
-    //     const data = await response.json();
-    //     console.log(data.data.message);
-    //   } catch (e) {
-    //     console.log(e);
-    //   }
-    // };
-    // makeAPICall();
+    const makeAPICall = async () => {
+      try {
+        const response = await fetch(
+          'https://system.kajkaminitiative.com/contact',
+          {
+            method: 'post',
+            mode: 'cors',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(newMessage),
+          }
+        );
+        await console.log(response);
+        const data = await response.json();
+        console.log(data.data.message);
+      } catch (e) {
+        console.log(e);
+      }
+    };
+    makeAPICall();
   };
 
   return (

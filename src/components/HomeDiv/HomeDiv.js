@@ -33,25 +33,31 @@ const HomeDiv = () => {
               From Idea To Product
             </h6>
             <div className='row g-1'>
-              <div className='col-4'>
+              <div className={`${homeDivStyles.singleCategory} col-4`}>
                 <div
                   className={`${homeDivStyles.homeCategory} d-flex justify-content-center align-items-center text-center`}
                 >
-                  <span>Web Design and Development</span>
+                  <span className={homeDivStyles.categoryTitle}>
+                    Web Design and Development
+                  </span>
                 </div>
               </div>
-              <div className='col-4'>
+              <div className={`${homeDivStyles.singleCategory} col-4`}>
                 <div
                   className={`${homeDivStyles.homeCategory} d-flex justify-content-center align-items-center text-center`}
                 >
-                  <span>Custom Web App</span>
+                  <span className={homeDivStyles.categoryTitle}>
+                    Custom Web App
+                  </span>
                 </div>
               </div>
-              <div className='col-4'>
+              <div className={`${homeDivStyles.singleCategory} col-4`}>
                 <div
                   className={`${homeDivStyles.homeCategory} d-flex justify-content-center align-items-center text-center`}
                 >
-                  <span>E-commerce Development</span>
+                  <span className={homeDivStyles.categoryTitle}>
+                    E-commerce Development
+                  </span>
                 </div>
               </div>
             </div>
@@ -60,6 +66,7 @@ const HomeDiv = () => {
             >
               <button
                 className={`${homeDivStyles.getStartButton} d-flex align-items-center`}
+                onClick={() => (window.location = '#contact')}
               >
                 <span> Get Started</span>{' '}
                 <i class='fa-solid fa-arrow-right-long ms-2'></i>
