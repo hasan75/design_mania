@@ -1,5 +1,5 @@
 import React from 'react';
-import { Webdesign } from './ServiceData';
+import { Webdesign, CustomWebApp, Ecommerce } from './ServiceData';
 // import { FaRegHandPaper } from "react-icons/fa";
 import { ImArrowUp } from 'react-icons/im';
 import serviceStyles from './Service.module.css';
@@ -60,8 +60,8 @@ function Service() {
           </div>
           <div className={serviceStyles.overlay2}>
             <div className={serviceStyles.text2}>
-              <h1>Web Design &#38; Development </h1>
-              {Webdesign.map((item, i) => (
+              <h1>Custom Web Application Development </h1>
+              {CustomWebApp.map((item, i) => (
                 <li className={serviceStyles.listItem2} key={i}>
                   {item.title}
                 </li>
@@ -88,8 +88,8 @@ function Service() {
           </div>
           <div className={serviceStyles.overlay3}>
             <div className={serviceStyles.text3}>
-              <h1>Web Design &#38; Development </h1>
-              {Webdesign.map((item, i) => (
+              <h1>E-Commerce Website </h1>
+              {Ecommerce.map((item, i) => (
                 <li className={serviceStyles.listItem3} key={i}>
                   {item.title}
                 </li>

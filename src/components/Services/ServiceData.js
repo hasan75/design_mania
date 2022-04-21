@@ -45,89 +45,53 @@ export const Webdesign = [
 
 export const CustomWebApp = [
   {
-    title: 'Personal Portfolio',
+    title: 'Financial calculations tools',
   },
   {
-    title: 'Newspaper website',
+    title: 'HR AND PAYROLL SOFTWARE',
   },
   {
-    title: 'Engineering / Construction Company Website',
+    title: 'Business Process Automation System',
   },
   {
-    title: 'Educational Institution Website',
+    title: 'Paperless Office System',
   },
   {
-    title: 'Blog website',
+    title: `Customer Relationship Management(CRM)`,
   },
   {
-    title: 'Furniture Company Website',
+    title: 'Educational Institute Management System',
   },
   {
-    title: 'Real Estate Company Website',
+    title: 'NGO Management System',
   },
   {
-    title: 'NGO and Charity Foundation Website',
+    title: 'Social Club Management System',
   },
   {
-    title: 'Tour / Visa Firm / Resort Website',
-  },
-  {
-    title: 'Law-firm website',
-  },
-  {
-    title: 'Interior Design Company Website',
-  },
-  {
-    title: 'Hospital and Clinic Website',
-  },
-  {
-    title: 'Training Institute / Coaching Center Website',
-  },
-  {
-    title: 'Buying House / Garments website',
+    title: 'And many more…',
   },
 ];
 export const Ecommerce = [
   {
-    title: 'Personal Portfolio',
+    title: 'Ecommerce website design',
   },
   {
-    title: 'Newspaper website',
+    title: 'Custom eCommerce development',
   },
   {
-    title: 'Engineering / Construction Company Website',
+    title: 'Microservices-based eCommerce',
   },
   {
-    title: 'Educational Institution Website',
+    title: 'B2C eCommerce',
   },
   {
-    title: 'Blog website',
+    title: 'B2B eCommerce',
   },
   {
-    title: 'Furniture Company Website',
+    title: 'Online marketplaces',
   },
   {
-    title: 'Real Estate Company Website',
-  },
-  {
-    title: 'NGO and Charity Foundation Website',
-  },
-  {
-    title: 'Tour / Visa Firm / Resort Website',
-  },
-  {
-    title: 'Law-firm website',
-  },
-  {
-    title: 'Interior Design Company Website',
-  },
-  {
-    title: 'Hospital and Clinic Website',
-  },
-  {
-    title: 'Training Institute / Coaching Center Website',
-  },
-  {
-    title: 'Buying House / Garments website',
+    title: 'And many more…',
   },
 ];
