@@ -18,7 +18,7 @@ const Footer = () => {
             <div className='allItems text-center'>
               <i class='fa-solid fa-globe fa-3x text-info'></i>
               <p className='my-2 fw-bold'>
-                House:15, Road:07, Uttara Sector-10, Dhaka-1230
+                House:18, Road:08, Turag, Dhaka-1230
               </p>
               <span>Our Address</span>
             </div>
@@ -33,7 +33,7 @@ const Footer = () => {
           <div className='col-md-4'>
             <div className='text-center'>
               <i class='fa-solid fa-phone fa-3x text-info'></i>
-              <p className='my-2 fw-bold'>+880 176 1395574</p>
+              <p className='my-2 fw-bold'>+880 183 7068201</p>
               <span>Our Phone</span>
             </div>
           </div>
