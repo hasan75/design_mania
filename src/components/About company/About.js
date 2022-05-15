@@ -6,10 +6,10 @@ function About() {
   return (
     <div className={`${aboutStyles.about} container`} id='aboutSection'>
       <div
-        className={`${aboutStyles.aboutSection} row g-1 d-flex  align-items-center`}
+        className={`${aboutStyles.aboutSection} row g-1 d-flex  align-items-center justify-content-center`}
       >
         <div className='col-md-6'>
-          <div className={aboutStyles.Container}>
+          <div className={`${aboutStyles.Container} pe-md-4`}>
             <div className={aboutStyles.firstDiv}>
               {about.map((item) => (
                 <>
@@ -19,39 +19,35 @@ function About() {
                 </>
               ))}
             </div>
-            <div className={aboutStyles.secondDiv}>
-              <div className={aboutStyles.eBtn}>
-                {exprience.map((item) => (
-                  <>
-                    <div className={aboutStyles.icon}>{item.icon}</div>
-                    <button className={aboutStyles.cta}>
-                      <span className={aboutStyles.animation}>
-                        {item.title}
-                      </span>
-                    </button>
-                    <p className={aboutStyles.para}>{item.para}</p>
-                  </>
-                ))}
-              </div>
-              <div className={aboutStyles.sBtn}>
-                {support.map((item) => (
-                  <>
-                    <div className={aboutStyles.icon}>{item.icon}</div>
-                    <button className={aboutStyles.cta}>
-                      <span className={aboutStyles.animation}>
-                        {item.title}
-                      </span>
-                    </button>
-                    <p className={`${aboutStyles.para} me-3`}>{item.para}</p>
-                  </>
-                ))}
-              </div>
-            </div>
           </div>
         </div>
         <div className='col-md-6'>
-          <div className={aboutStyles.teamdata}>
+          {/* <div className={aboutStyles.teamdata}>
             <Team />
+          </div> */}
+          <div className={aboutStyles.secondDiv}>
+            <div className={aboutStyles.eBtn}>
+              {exprience.map((item) => (
+                <>
+                  <div className={aboutStyles.icon}>{item.icon}</div>
+                  <button className={aboutStyles.cta}>
+                    <span className={aboutStyles.animation}>{item.title}</span>
+                  </button>
+                  <p className={aboutStyles.para}>{item.para}</p>
+                </>
+              ))}
+            </div>
+            <div className={aboutStyles.sBtn}>
+              {support.map((item) => (
+                <>
+                  <div className={aboutStyles.icon}>{item.icon}</div>
+                  <button className={aboutStyles.cta}>
+                    <span className={aboutStyles.animation}>{item.title}</span>
+                  </button>
+                  <p className={`${aboutStyles.para} me-3`}>{item.para}</p>
+                </>
+              ))}
+            </div>
           </div>
         </div>
       </div>

@@ -29,17 +29,17 @@
   font-size: 18px;
 }
 .secondDiv {
-  padding-top: 35px;
+  padding-top: 20px;
   display: flex;
   width: 620px;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 .eBtn,
 .sBtn {
   margin-top: 5px;
-  width: 280px;
+  max-width: 280px;
   /* border: 2px solid rebeccapurple; */
 }
 .para {
